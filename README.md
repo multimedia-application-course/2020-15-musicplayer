@@ -15,4 +15,4 @@ release 1.1
 有播放器基本的播放进度条，音量条。<br>
 <img src='/show/2.png' width='500' height='300'><br>
 可以最小化到任务栏，有迷你模式，可切换完整模式和迷你模式。<br>
-<img src='/show/3.png' width='200' height='80'><br>
+<img src='/show/3.png' width='300' height='80'><br>
