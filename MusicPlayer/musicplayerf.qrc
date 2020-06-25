@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>miku.jpg</file>
+        <file>img/min.png</file>
+        <file>img/music.png</file>
+        <file>img/volume.png</file>
+        <file>img/quit.png</file>
+        <file>img/max.png</file>
+        <file>img/last.png</file>
+        <file>img/next.png</file>
+        <file>img/stop.png</file>
+        <file>img/play.png</file>
+        <file>img/add.png</file>
+        <file>img/add1.png</file>
+        <file>img/search.png</file>
+        <file>miku.png</file>
+        <file>img/add11.png</file>
+        <file>img/addlist.png</file>
+        <file>img/add22.png</file>
+        <file>miku_icon.png</file>
+        <file>mini.jpg</file>
+    </qresource>
+</RCC>
