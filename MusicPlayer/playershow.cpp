@@ -310,11 +310,13 @@ void PlayerShow::updateMusicInfo()//当播放歌曲改变时更新歌曲信息
     {
     QString Info=MusicPlayer->metaData(QStringLiteral("Title")).toString()+" by "//歌曲名字和作者
                +MusicPlayer->metaData(QStringLiteral("Author")).toString();
+    qDebug()<<selectedMusicId;
     selectedMusicId++;
     if(selectedMusicId+1>musicNumber)
         selectedMusicId=0;
     selectedMusic=ui->listWidget_2->item(selectedMusicId)->text();
     //qDebug()<<selectedMusic;
+    qDebug()<<selectedMusicId;
     ui->listWidget_2->item(selectedMusicId)->setSelected(true);
     ui->label_2->setText(Info);
     }
@@ -429,8 +431,9 @@ void PlayerShow::buttonPlay()//播放按钮事件
 void PlayerShow::buttonLast()//上一首按钮事件
 {
     MusicList->previous();
-    selectedMusicId-=2;
-    if(selectedMusicId<0)selectedMusicId=0;
+    qDebug()<<"b"<<selectedMusicId;
+    selectedMusicId=(musicNumber+selectedMusicId-2)%musicNumber;
+    qDebug()<<"a"<<selectedMusicId;
 }
 void PlayerShow::buttonNext()//下一首按钮事件
 {
