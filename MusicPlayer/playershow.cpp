@@ -429,6 +429,8 @@ void PlayerShow::buttonPlay()//播放按钮事件
 void PlayerShow::buttonLast()//上一首按钮事件
 {
     MusicList->previous();
+    selectedMusicId-=2;
+    if(selectedMusicId<0)selectedMusicId=0;
 }
 void PlayerShow::buttonNext()//下一首按钮事件
 {
